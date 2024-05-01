@@ -1,38 +1,94 @@
-.App {
+/* TAILWIND STUFF */
+/* Add default font family montserrat */
+
+/* @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"; */
+
+body,
+* {
+  font-family: "Montserrat", sans-serif;
+  scrollbar-width: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container {
+  position: relative;
   text-align: center;
+  color: white;
+}
+.navbar-float {
+  position: absolute;
+}
+/* MY STYLES */
+.hero-image {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -16%);
+}
+/* center hero image text */
+.hero-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.hero-content {
+  background-color: #ff2a09;
+  width: 100vw;
   min-height: 100vh;
+}
+
+.hero-title {
+  color: #141414;
+  text-align: center;
+  /* line-height: 1; */
+  font-weight: 700;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  color: #141414;
+  text-align: center;
+  line-height: 2;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  /* text-transform: uppercase; */
+}
+
+.home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-self: center;
+  position: relative;
+  /* background-color: rgb(255, 18, 18);   */
 }
 
-.App-link {
-  color: #61dafb;
+.item-shop {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #ff2a09;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Button */
+.hero-cta {
+  background-color: #ff2a09;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  top: 42px;
 }
